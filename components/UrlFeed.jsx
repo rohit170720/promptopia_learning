@@ -15,7 +15,7 @@ const UrlFeed = ({submitting}) => {
         const hasConfirmed = confirm("Are you sure you want to delete this site?")
         if(hasConfirmed){
           try{
-            await fetch(`/api/promt/${site._id.toString()}`, {
+            await fetch(`/api/site/${site._id.toString()}`, {
               method:'DELETE'
             })  ; 
   
@@ -65,7 +65,7 @@ const UrlFeed = ({submitting}) => {
 
         </div>
 
-        <div className="copy_btn" onClick={()=>{handleDelete(obj)}}>
+        <div className="copy_btn" onClick={()=>{handleDelete&&handleDelete(obj)}}>
           <Image
           
           src={'/assets/icons/delete.png'}
