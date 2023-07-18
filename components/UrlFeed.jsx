@@ -47,7 +47,7 @@ const UrlFeed = ({submitting}) => {
   return (
     <div className='mt-5 flex flex-wrap gap-3'>
         {
-            sites.map((obj,index)=>(<div className='glassmorphism max-w-[340px]' key={index}>
+            sites.map((obj,index)=>(<div className='glassmorphism  lg:max-w-[340px]' key={index}>
 
 <div className="flex justify-between items-start gap-3">
 <div className="flex-1 flex justify-start items-center gap-2 cursor-pointer max-w-[83%]">
