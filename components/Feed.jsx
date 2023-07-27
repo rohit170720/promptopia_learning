@@ -32,7 +32,7 @@ const Feed = () => {
 
  
   const filterPrompts = (searchtext) => {
-    const regex = new RegExp(searchText, "i") ; 
+    const regex = new RegExp(searchtext, "i") ; 
     return posts.filter((item)=>regex.test(item.creator.username) || regex.test(item.tag) || regex.test(item.prompt))
 
   }
